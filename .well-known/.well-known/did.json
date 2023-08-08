@@ -11,7 +11,7 @@
       "id": "#linkeddomains",
       "type": "LinkedDomains",
       "serviceEndpoint": {
-        "origins": [
+        "origins": [ 
           "https://black-sea-0a4dd1510.3.azurestaticapps.net/"
         ]
       }
