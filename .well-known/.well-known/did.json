@@ -1,1 +1,48 @@
-
+{
+  "id": "did:web:black-sea-0a4dd1510.3.azurestaticapps.net",
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@base": "did:web:black-sea-0a4dd1510.3.azurestaticapps.net"
+    }
+  ],
+  "service": [
+    {
+      "id": "#linkeddomains",
+      "type": "LinkedDomains",
+      "serviceEndpoint": {
+        "origins": [
+          "https://black-sea-0a4dd1510.3.azurestaticapps.net/"
+        ]
+      }
+    },
+    {
+      "id": "#hub",
+      "type": "IdentityHub",
+      "serviceEndpoint": {
+        "instances": [
+          "https://hub.did.msidentity.com/v1.0/8f2ec0f2-3c6e-4927-bb15-69c5704500f0"
+        ]
+      }
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#589b4e53ac3444e3a0ea87bf13b54b40vcSigningKey-6334a",
+      "controller": "did:web:black-sea-0a4dd1510.3.azurestaticapps.net",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "publicKeyJwk": {
+        "crv": "secp256k1",
+        "kty": "EC",
+        "x": "1ph_yZeEQ73oyfUSnr9_udskKz9GoIdslMWDe8uSpP8",
+        "y": "_B0koDmrTiC0Pw8IogeZfgYLJjVdYJjmaxoFlOXWh1Q"
+      }
+    }
+  ],
+  "authentication": [
+    "#589b4e53ac3444e3a0ea87bf13b54b40vcSigningKey-6334a"
+  ],
+  "assertionMethod": [
+    "#589b4e53ac3444e3a0ea87bf13b54b40vcSigningKey-6334a"
+  ]
+}
